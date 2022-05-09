@@ -447,8 +447,8 @@ descr_tab <- descr_tab %>%
          "Agriculture employm. share (female)" = "wdi_emp_agr_f",
          "Industry employm. share (female)" = "wdi_emp_ind_f",
          "Services employm. share (female)" = "wdi_emp_ser_f",
-         "Smoking prevalence (male)" = "wdi_smok_m",
-         "Smoking prevalence (female)" = "wdi_smok_f")) %>% 
+         "Smoking prevalence (in % of pop.) (male)" = "wdi_smok_m",
+         "Smoking prevalence (in % of pop.) (female)" = "wdi_smok_f")) %>% 
   arrange(Variable)
 
 # export
@@ -461,8 +461,7 @@ write_csv(descr_tab, "results/tables/tab_descr.csv")
 cors_indiv_tab <- df %>%
   select(indiv, indiv_welzel, self_expr_val,
          emancip_val, autonomy, indiv_hofstd) %>% 
-  {cor(., use = "pair")} %>% 
-  round(2) %>% as_tibble
+  {cor(., use = "pair")} %>% as_tibble
 
 names(cors_indiv_tab) <- c("Individualism (Minkov-Hofstede)",
                            "Individualism (Beugelsdijk & Welzel)",
