@@ -1,0 +1,37 @@
+Variable,Mean,SD,Min,Max,N
+Obesity rate (BMI ≥ 30) (male),18.3,8.8,1.5,34.7,51
+Overweight rate (BMI ≥ 25) (male),54,17.6,15.1,72.3,51
+Avg. BMI (male),25.9,1.9,21.6,28.8,51
+Obesity rate (BMI ≥ 30) (female),20.9,9.5,2.4,40.4,51
+Overweight rate (BMI ≥ 25) (female),48.8,13.2,19.9,68.9,51
+Avg. BMI (female),25.7,2,21.7,31.2,51
+Flexibility (Minkov-Hofstede),-7.3,91.3,-207.3,234.1,51
+Individualism (Minkov-Hofstede),-4.7,97.2,-291,182,51
+Individualism (Beugelsdijk & Welzel),41.3,23.4,2.8,100,48
+Self-expression values (Inglehart),0.6,1.1,-1,3,47
+Emancipative values (Welzel),0.5,0.1,0.3,0.6,49
+Autonomy (Schwartz),0.4,0.7,-1.3,1.6,47
+Individualism (Hofstede),49.6,24.8,12,91,44
+"log GDP per capita (in USD, PPP)",10.1,0.8,8.1,11.4,51
+Years of schooling (male),10.7,2.2,4.7,14.5,51
+Years of schooling (female),10.3,2.5,4.8,13.7,51
+Economic Globalization Index,75.7,11.5,42,91,51
+Uneven Economic Development Indicator,4.8,2,1,8.8,51
+Undernourishment (in % of pop.),3.3,4.4,1,21.5,51
+Avg. World Governance Indicators,0.5,1,-1.4,1.9,51
+Economic Freedom Index,65.7,11.1,37.6,87.2,51
+Urban population share,0.7,0.2,0.2,1,51
+Health expenditure (in % GDP),7.6,2.9,3,16.7,51
+"Avg. temperature (in degree Celcius, 1961-1990)",13.7,8.6,-5.3,26.8,51
+McDonald's density (in per 100k),1.1,1.1,0,4.3,49
+Rice supply (in kg per person-year),42.2,60.2,1.1,217.2,50
+Vegetables/fruit supply (in kg per person-year),187.5,67.1,70.1,445.8,50
+Share animal protein (in % of calories),6.1,1.9,1.5,9.4,50
+Agriculture employm. share (male),13.1,13,1.5,46.1,46
+Industry employm. share (male),30.8,6.2,18.2,49,46
+Services employm. share (male),55.6,10.8,29.4,73.4,46
+Agriculture employm. share (female),11.1,15.6,0.4,65.3,46
+Industry employm. share (female),12.6,4.4,5.9,23.2,46
+Services employm. share (female),75.5,17.1,17,91.9,46
+Smoking prevalence (male),35,10.9,10,67,45
+Smoking prevalence (female),16.8,11.2,1,47,45
