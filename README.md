@@ -13,10 +13,10 @@ The following table explains all variables in the data file `data_51countries.cs
 | country                     | Name of country     
 | country_short               | ISO-3 country code     
 | region_wb                   | World Region according to the World Bank  
-| obesity_m                   | Obesity rate (BMI >= 30) among male population
-| obesity_m                   | Obesity rate (BMI >= 30) among female population                                
-| overw_m                     | Overweight rate (BMI >= 25) among male population                                
-| overw_f                     | Overweight rate (BMI >= 25) among female population      
+| obesity_m                   | Obesity rate (BMI &#x2265; 30) among male population
+| obesity_m                   | Obesity rate (BMI &#x2265; 30) among female population                                
+| overw_m                     | Overweight rate (BMI &#x2265; 25) among male population                                
+| overw_f                     | Overweight rate (BMI &#x2265; 25) among female population      
 | BMI_m                       | Average BMI among male population
 | BMI_f                       | Average BMI among female population
 | flex                        | Flexibility (according to Minkov-Hofstede)
