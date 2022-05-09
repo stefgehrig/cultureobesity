@@ -383,7 +383,7 @@ vars_all <- c(dep_vars_pool_m, dep_vars_pool_f, cul_vars, indiv_vars_all,
               adj_vars_m, adj_vars_f, indep_vars_pool_m, indep_vars_pool_f)
 vars_all <- vars_all[!duplicated(vars_all)]
 
-                     # create raw table
+# create raw table
 descr_tab <- df %>%
   filter(!is.na(flex)) %>%
   summarise(across(
@@ -447,8 +447,8 @@ descr_tab <- descr_tab %>%
          "Agriculture employm. share (female)" = "wdi_emp_agr_f",
          "Industry employm. share (female)" = "wdi_emp_ind_f",
          "Services employm. share (female)" = "wdi_emp_ser_f",
-         "Smoking prevalence (in % of pop.) (male)" = "wdi_smok_m",
-         "Smoking prevalence (in % of pop.) (female)" = "wdi_smok_f")) %>% 
+         "Smoking prevalence (male)" = "wdi_smok_m",
+         "Smoking prevalence (female)" = "wdi_smok_f")) %>% 
   arrange(Variable)
 
 # export
