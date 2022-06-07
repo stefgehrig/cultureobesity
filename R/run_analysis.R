@@ -1,5 +1,5 @@
 ############################################
-#### load libraries, functions and data ####
+#### Load libraries, functions and data ####
 ############################################
 library(tidyverse)   # v1.3.1 
 library(DescTools)   # v0.99.44 
@@ -71,7 +71,7 @@ indiv_vars_alt <- c("indiv_welzel",
 nspecs      <- 100 # size of random sample of specifications for specification curves
 weight_var  <- "pop_log" # model weights (if applicable)
 region_var  <- "region_wb" # region fixed effect (if applicable)
-outlier_mad <- 3  # median absolute deviation for winsorizing (if applicable)
+outlier_mad <- 3 # median absolute deviation for winsorizing (if applicable)
 
 ##############################
 #### Specification curves ####
@@ -229,7 +229,7 @@ dev.off()
 write_csv(spec_table_f, "results/tables/tab_curve_f.csv")
 
 ##########################################
-#### scatter plot cultural dimensions ####
+#### Scatter plot cultural dimensions ####
 ##########################################
 
 scatt_dim_plot <- df %>%
