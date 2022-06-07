@@ -480,7 +480,7 @@ write_csv(cors_indiv_tab, "results/tables/tab_cors.csv")
 #### Missingness analysis and multiple imputations ####
 #######################################################
 
-                     # create data set for multiple imputations
+# create data set for multiple imputations
 dfl_imp <- dfl %>%
   select(
     # variables not used for imputation
@@ -533,7 +533,7 @@ dfl_imp <- dfl %>%
   ),
   ~is.na(.x)))) %>%
   ungroup %>%
-  # set limit to maximum 14 of 21 missing, i.e. not more than 1/3 missing ( 155 countries remain)
+  # set limit to maximum 14 of 21 missing, i.e. not more than 1/3 missing (155 countries remain)
   filter(sum_NA <= 7) %>%  
   select(-sum_NA) %>%      
   mutate(culture_zone = factor(culture_zone))
