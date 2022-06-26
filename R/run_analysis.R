@@ -257,7 +257,7 @@ scatt_dim_plot <- df %>%
   labs(x     = "Monumentalism \u2b9c \u2b9e Flexibility",
        y     = "Collectivism \u2b9c \u2b9e Individualism",
        size  = "Obesity rate\n(BMI \u2265 30,\nin %)",
-       color = "log GDP p.c.\n(USD)") +
+       color = "Log GDP/capita\n(USD)") +
   scale_color_gradient(low = "cadetblue1", high = "blue2")
 
 # export
