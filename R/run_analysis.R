@@ -1,5 +1,5 @@
 ############################################
-#### load libraries, functions and data ####
+#### Load libraries, functions and data ####
 ############################################
 library(tidyverse)   # v1.3.1 
 library(DescTools)   # v0.99.44 
@@ -71,7 +71,7 @@ indiv_vars_alt <- c("indiv_welzel",
 nspecs      <- 100 # size of random sample of specifications for specification curves
 weight_var  <- "pop_log" # model weights (if applicable)
 region_var  <- "region_wb" # region fixed effect (if applicable)
-outlier_mad <- 3  # median absolute deviation for winsorizing (if applicable)
+outlier_mad <- 3 # median absolute deviation for winsorizing (if applicable)
 
 ##############################
 #### Specification curves ####
@@ -229,7 +229,7 @@ dev.off()
 write_csv(spec_table_f, "results/tables/tab_curve_f.csv")
 
 ##########################################
-#### scatter plot cultural dimensions ####
+#### Scatter plot cultural dimensions ####
 ##########################################
 
 scatt_dim_plot <- df %>%
@@ -480,7 +480,7 @@ write_csv(cors_indiv_tab, "results/tables/tab_cors.csv")
 #### Missingness analysis and multiple imputations ####
 #######################################################
 
-                     # create data set for multiple imputations
+# create data set for multiple imputations
 dfl_imp <- dfl %>%
   select(
     # variables not used for imputation
@@ -533,7 +533,7 @@ dfl_imp <- dfl %>%
   ),
   ~is.na(.x)))) %>%
   ungroup %>%
-  # set limit to maximum 14 of 21 missing, i.e. not more than 1/3 missing ( 155 countries remain)
+  # set limit to maximum 14 of 21 missing, i.e. not more than 1/3 missing (155 countries remain)
   filter(sum_NA <= 7) %>%  
   select(-sum_NA) %>%      
   mutate(culture_zone = factor(culture_zone))
