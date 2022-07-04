@@ -1,5 +1,7 @@
 # cultureobesity
 
+This repository contains data and code which allow to reproduce all analysis results presented in the article *"The weight of culture: Societal individualism and flexibility explain large global variations in obesity"* (Akaliyski et al., 2022), which is accessible [here](https://doi.org/10.1016/j.socscimed.2022.115167).
+
 ## Overview of repository
 
 The script `R/run_analysis.R` produces all results and figures from the article, sourcing the functions defined in `R/helper_functions.R`. Readily produced results are already stored in the results folder. The data loaded into the script are in `data/data_51countries.csv` (data for main analysis) and `data/data_190countries.csv` (data for missingness analysis and imputations).
